@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Delineantes Profesional</title>
+    <title>Trazos Asociados J&C</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- para los modeos 3d -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.css">
+
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg text-white" style="background-color:#BF9264;">
+    <nav class="navbar navbar-expand-lg " style="background-color:#BF9264;">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bolder" href="#">Trazos Asociados J&C</a>
+            <a class="navbar-brand fw-bolder text-white" href="#">Trazos Asociados J&C</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
                     <li class="nav-item">
                         <!-- btn de logeo -->
-                        <a class="nav-link btn btn-outline-success fw-semibold" href="Vistas/login.html">
+                        <a class="nav-link btn btn-outline-success fw-semibold text-white" href="Vistas/login.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -41,15 +45,16 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-primar  text-center py-5" style="background-color:linen;">
-        <div class="container">
-            <h1 class="display-4">Julieth Murillo - Charik Mejía<br>Delineantes Técnicos</h1>
-            <p class="lead">Especialista en planos arquitectónicos, industriales y urbanísticos</p>
+    <header class="text-center py-5" style="background-color:#F0F1C5;">
+        <div class="container fw-semibold">
+            <h1 class="display-6 fw-semibold">Arquitectura flotante, modelación y disfunción gráfica de sistemas
+                constructivos para el Bajo Atrato</h1>
+            <p class="lead"> <strong>Julieth Murillo - Charik Mejía</strong><br>Delineantes Técnicos</p>
         </div>
     </header>
 
     <!-- Servicios -->
-    <section id="servicios" class="py-5">
+    <!-- <section id="servicios" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Servicios</h2>
             <div class="row">
@@ -81,15 +86,39 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+    <div class="container my-5">
+        <div class="d-md-flex">
+            <div class="w-100">
+                <p class="fs-4">"En este sitio web, te invito a explorar un prototipo de vivienda flotante inspirado en
+                    las
+                    comunidades de
+                    Bangladesh y adaptado a las necesidades del Bajo Atrato colombiano. Descubrirás detalles
+                    constructivos,
+                    su
+                    adaptabilidad a diferentes condiciones climáticas, la incorporación de tecnologías sostenibles y
+                    cómo
+                    aprovecha los recursos hídricos de forma responsable, minimizando el impacto ambiental."</p>
+            </div>
+            <div class="w-100">
+                <img class="card-img rounded-5" src="Image/atrato-river.jpg" width="" alt="casas atrata obsoletas"
+                    title="viviendas Obsoletas">
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Proyectos -->
     <section id="proyectos" class="bg-light py-5">
-        <div class="container">
+        <!-- <div class="container">
             <h2 class="text-center mb-4">Proyectos Destacados</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x300" class="img-fluid rounded mb-3" alt="Proyecto 1">
+                <div class="col-md-4">
+                    <model-viewer src="Proyectos3d/MiConv.com__MiConv.com__PLANTILLA_SPT_EJERCICIO3_JULIETH_MURILLO (1)-0004 - Floor Plan - Level 1.glb" alt="Un modelo 3D" auto-rotate
+                        camera-controls></model-viewer>
                     <h5>Edificio Residencial en Medellín</h5>
                     <p>Colaboración en planos estructurales y detalles constructivos.</p>
                 </div>
@@ -97,6 +126,25 @@
                     <img src="https://via.placeholder.com/500x300" class="img-fluid rounded mb-3" alt="Proyecto 2">
                     <h5>Planta Industrial en Antioquia</h5>
                     <p>Diseño técnico de maquinaria y distribución de espacios productivos.</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <model-viewer
+                        src="Proyectos3d/MiConv.com__MiConv.com__PLANTILLA_SPT_EJERCICIO3_JULIETH_MURILLO (1)-0004 - Floor Plan - Level 1.glb"
+                        alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
+                        style="width: 100%; height: 400px;"></model-viewer>
+                    <h5>NOmbre de Proyecto</h5>
+                    <p>Colaboración en planos estructurales y detalles constructivos.</p>
+                </div>
+                <div class="col border">
+                    <model-viewer src="Proyectos3d/MiConv.com__MID4_JULIETHMM_RVT25_10_09_2025 - 3D View - {3D}.glb"
+                        alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
+                        style="width: 100%; height: 400px;"></model-viewer>
+                    <h5>Edificio Residencial en Medellín</h5>
+                    <p>Colaboración en planos estructurales.</p>
                 </div>
             </div>
         </div>
@@ -130,7 +178,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2025 Murasp06 - Delineante. Todos los derechos reservados.</p>
+        <p class="mb-0">© 2025  - Delineante. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
