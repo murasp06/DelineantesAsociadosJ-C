@@ -2,9 +2,9 @@ name: 🚀 Deploy to trazosasociadosjc.infinityfreeapp.com
 
 on:
   workflow_dispatch: # Uncomment below to deploy on push instead
-   push:
-     branches:
-       - main
+  push:
+    branches:
+     - main
 
 jobs:
   deploy:
