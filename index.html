@@ -7,8 +7,24 @@
     <!-- <meta author="Murasp06"> -->
     <meta name="description" content="sitio web para Trazos Asociados J&C">
     <title>Trazos Asociados J&C</title>
+
+    <link rel="shortcut icon" href="Image/Logo TAJ&C.png" type="image/x-icon-png-jpg">
+
+    <!-- feuente poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- link a los dns de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- link para los iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 
     <!-- para los modeos 3d -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -21,7 +37,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg " style="background-color:#BF9264;">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bolder text-white" href="#">Trazos Asociados J&C</a>
+            <!-- <a class="navbar-brand fw-bolder text-white" href="#">Trazos Asociados J&C</a> -->
+            <a class="navbar-brand fw-bolder text-white" href="/"><img src="Image/Logo_TAJ&C.png" class="rounded-4"
+                    width="40" height="40" alt=""> Trazos Asociados J&C </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -93,9 +111,10 @@
 
     <!-- introduccion al sitio -->
     <div id="invitacion" class="container my-5">
-        <div class="d-md-flex">
-            <div class="w-100">
-                <p class="fs-4 text-center">"En este sitio web, te invito a explorar un prototipo de vivienda flotante inspirado en
+        <div class="d-md-flex align-items-center">
+            <div class="w-100 p-4">
+                <p class="fs-4 text-center ">"En este sitio web, te invito a explorar un prototipo de vivienda flotante
+                    inspirado en
                     las
                     comunidades de
                     Bangladesh y adaptado a las necesidades del Bajo Atrato colombiano. Descubrirás detalles
@@ -115,7 +134,7 @@
 
 
     <!-- Proyectos -->
-    <section id="proyectos" style="background-color:#F0F1C5;" class=" py-5">
+    <section id="proyectos"  class=" py-5">
         <!-- <div class="container">
             <h2 class="text-center mb-4">Proyectos Destacados</h2>
             <div class="row">
@@ -132,8 +151,8 @@
                 </div>
             </div>
         </div> -->
-        <div class="container text-center">
-            <h2 style="color: #6F826A;" class="mb-5" >Proyectos Destacados</h2>
+        <div class="container text-center bg-light-subtle">
+            <h2 style="color: #6F826A;" class="mb-5">Proyectos Destacados</h2>
             <div class="d-lg-flex pb-5 ">
                 <div class="col border-end ">
                     <model-viewer
@@ -150,6 +169,121 @@
                     <h5>Nombre del proyecto</h5>
                     <p>breve descripcion del proyecto.</p>
                 </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- apartado para los participantes del proyecto -->
+    <section id="equipo" style="background-color:#F0F1C5;" class="py-5 ">
+        <div class="container" >
+            <h2 class="text-center mb-5 fw-semibold" >Nuestro Equipo</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                <!-- Miembro 1 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 1" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Ana Torres</strong></h5>
+                            <p class="card-subtitle text-muted">Arquitecta Técnica</p>
+                            <p class="card-text">Especialista en planos estructurales y diseño urbano.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 2" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Carlos Mejía</strong></h5>
+                            <p class="card-subtitle text-muted">Delineante Industrial</p>
+                            <p class="card-text">Modelado de piezas mecánicas y planos de fabricación.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 3" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Laura Gómez</strong></h5>
+                            <p class="card-subtitle text-muted">Topógrafa</p>
+                            <p class="card-text">Levantamientos topográficos y representación geoespacial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 4" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"><strong>Jorge Ruiz</strong></h5>
+                            <p class="card-subtitle text-muted">Diseñador CAD</p>
+                            <p class="card-text">Experto en AutoCAD y modelado técnico 2D/3D.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 5 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 5" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"><strong>María López</strong></h5>
+                            <p class="card-subtitle text-muted">Coordinadora de Proyectos</p>
+                            <p class="card-text">Gestión de cronogramas, entregables y clientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 6" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"><strong>Esteban Vargas</strong></h5>
+                            <p class="card-subtitle text-muted">Ingeniero Civil</p>
+                            <p class="card-text">Supervisión técnica y validación estructural de planos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 7 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 7" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;"><strong>Paula Ríos</strong></h5>
+                            <p class="card-subtitle text-muted">Diseñadora Gráfica</p>
+                            <p class="card-text">Identidad visual, planos de presentación y branding técnico.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 8 -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
+                            alt="Miembro 8" style="width: 120px; height: 120px;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#BF9264;" ><strong>Luis Herrera</strong></h5>
+                            <p class="card-subtitle text-muted">Especialista BIM</p>
+                            <p class="card-text">Modelado de información de construcción y coordinación digital.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -182,7 +316,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2025  - Trazos Asociados J&C. Todos los derechos reservados.</p>
+        <p class="mb-0">© 2025 - Trazos Asociados J&C. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
