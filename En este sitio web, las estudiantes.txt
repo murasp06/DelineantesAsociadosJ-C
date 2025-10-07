@@ -1,0 +1,89 @@
+mostrar la consulta
+ <div class="row row-cols-1 row-cols-md-2 g-4">
+    <?php while ($archivo = $resultado->fetch_assoc()): ?>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><?= htmlspecialchars($archivo['nombre_original']) ?></h5>
+            <p class="card-text">Tipo: <?= htmlspecialchars($archivo['tipo']) ?></p>
+
+            <?php if (strpos($archivo['tipo'], 'image/') === 0): ?>
+              <img src="<?= htmlspecialchars($archivo['ruta']) ?>" class="img-fluid rounded" alt="Vista previa">
+            <?php elseif (strpos($archivo['tipo'], 'application/pdf') === 0): ?>
+              <embed src="<?= htmlspecialchars($archivo['ruta']) ?>" type="application/pdf" width="100%" height="200px" />
+            <?php else: ?>
+              <p class="text-muted">Archivo disponible para descarga.</p>
+            <?php endif; ?>
+          </div>
+          <div class="card-footer text-end">
+            <a href="<?= htmlspecialchars($archivo['ruta']) ?>" download class="btn btn-success btn-sm">Descargar</a>
+          </div>
+        </div>
+      </div>
+
+sql
+
+CREATE TABLE archivos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_original VARCHAR(255),
+  ruta VARCHAR(255),
+  tipo VARCHAR(100),
+  fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+formulario subir
+
+<form action="subir.php" method="post" enctype="multipart/form-data">
+  <label for="archivo">Selecciona archivo:</label>
+  <input type="file" name="archivo" id="archivo" required>
+  <button type="submit">Subir</button>
+</form>
+
+
+php 
+<?php
+// Configuración de conexión
+$host = "localhost";
+$db = "tu_base_de_datos";
+$user = "tu_usuario";
+$pass = "tu_contraseña";
+
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error) {
+  die("Error de conexión: " . $conn->connect_error);
+}
+
+// Verificar si se subió el archivo
+if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] === UPLOAD_ERR_OK) {
+  $nombreOriginal = $_FILES['archivo']['name'];
+  $tipoArchivo = $_FILES['archivo']['type'];
+  $rutaTemporal = $_FILES['archivo']['tmp_name'];
+
+  // Carpeta destino
+  $carpetaDestino = "archivos/";
+  if (!is_dir($carpetaDestino)) {
+    mkdir($carpetaDestino, 0755, true);
+  }
+
+  // Ruta final
+  $rutaFinal = $carpetaDestino . basename($nombreOriginal);
+
+  // Mover archivo
+  if (move_uploaded_file($rutaTemporal, $rutaFinal)) {
+    // Guardar en la base de datos
+    $stmt = $conn->prepare("INSERT INTO archivos (nombre_original, ruta, tipo) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $nombreOriginal, $rutaFinal, $tipoArchivo);
+    $stmt->execute();
+    $stmt->close();
+
+    echo "Archivo subido y registrado correctamente.";
+  } else {
+    echo "Error al mover el archivo.";
+  }
+} else {
+  echo "No se recibió ningún archivo.";
+}
+
+$conn->close();
+?>

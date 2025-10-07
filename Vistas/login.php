@@ -31,9 +31,13 @@
   <div class="login-container">
     <h2 style="color: #6F826A;" class="text-center mb-4">Iniciar Sesión</h2>
     <!-- mejorar los imput y ponerles los iconos para mejor integracion de personas diferentes -->
-    <form action="login.php" method="POST">
+    <?php
+    // include("../model/conexion_bd.php");
+    require "../Controlador/con-logueo.php" ?>
+
+    <form  method="POST">
       <div class="mb-3">
-        <label for="usuario" class="form-label"> Usuario</label>
+        <label for="" class="form-label">Correo</label>
         <input type="text" class="form-control" id="usuario" name="usuario" required>
       </div>
       <div class="mb-3">
@@ -41,7 +45,7 @@
         <input type="password" class="form-control" id="clave" name="clave" required>
       </div>
       <!-- configurar boton para que al pasar el puntero se cambie a color chocolate no es RF -->
-      <button type="submit" style="background-color: #BF9264;" class="btn text-white fw-bolder  w-100">Entrar</button>
+      <input type="submit" name="btnlogin" value="Entrar" style="background-color: #BF9264;" class="btn text-white fw-bolder  w-100">
     </form>
     <div class="mt-3 text-center">
       <a href="#">¿Olvidaste tu contraseña?</a>

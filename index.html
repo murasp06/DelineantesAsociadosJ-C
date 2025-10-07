@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta author="Murasp06"> -->
-    <meta name="description" content="sitio web para Trazos Asociados J&C">
+    <!-- SEO básico -->
+    <meta name="description"
+        content="Trazos Asociados J&C es una firma de delineación técnica especializada en planos arquitectónicos, modelado 3D y proyectos de construcción. Conoce a nuestro equipo y descubre nuestros servicios.">
+    <meta name="keywords" content="delineante técnico, planos arquitectónicos, dibujo técnico, modelado 3D,
+        trazos asociados, J&C, delineación profesional, AutoCAD, SketchUp, Blender, FreeCAD, proyectos de construcción,
+        visualización arquitectónica, equipo de diseño técnico, servicios de delineación, planos estructurales, urbanismo,
+        topografía, empresa de delineantes, colaboración técnica">
+    <meta name="author" content="Murasp06">
+
     <title>Trazos Asociados J&C</title>
 
     <link rel="shortcut icon" href="Image/Logo TAJ&C.png" type="image/x-icon-png-jpg">
@@ -13,9 +20,13 @@
     <!-- feuente poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- link css bootstrap sin conexion -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
     <!-- link a los dns de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
     <!-- link para los iconos de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -45,12 +56,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fw-bold">
-                    <li class="nav-item"><a class="nav-link text-white" href="#invitacion">Invitacion</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#equipo">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
                     <li class="nav-item">
                         <!-- btn de logeo -->
-                        <a class="nav-link btn btn-outline-success fw-semibold text-white" href="Vistas/login.html">
+                        <a class="nav-link btn btn-outline-success fw-semibold text-white" href="Vistas/login.php">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -68,8 +79,8 @@
     <header class="text-center py-5" style="background-color:#F0F1C5;">
         <div class="container fw-semibold">
             <h1 class="display-6 fw-semibold">Arquitectura flotante, modelación y disfunción gráfica de sistemas
-                constructivos para el Bajo Atrato</h1>
-            <p class="lead"> <strong>Julieth Murillo - Charik Mejía</strong><br>Delineantes Técnicos</p>
+                constructivos para <br> el Bajo Atrato</h1>
+            <h3 class="lead">Innovacion y sostenibilidad para entornos acuaticos</h3>
         </div>
     </header>
 
@@ -108,87 +119,128 @@
         </div>
     </section> -->
 
-
     <!-- introduccion al sitio -->
-    <div id="invitacion" class="container my-5">
-        <div class="d-md-flex align-items-center">
-            <div class="w-100 p-4">
-                <p class="fs-4 text-center ">"En este sitio web, te invito a explorar un prototipo de vivienda flotante
-                    inspirado en
-                    las
-                    comunidades de
-                    Bangladesh y adaptado a las necesidades del Bajo Atrato colombiano. Descubrirás detalles
-                    constructivos,
-                    su
-                    adaptabilidad a diferentes condiciones climáticas, la incorporación de tecnologías sostenibles y
-                    cómo
-                    aprovecha los recursos hídricos de forma responsable, minimizando el impacto ambiental."</p>
-            </div>
-            <div class="w-100">
-                <img class="card-img rounded-5" src="Image/atrato-river.jpg" width="" alt="casas atrata obsoletas"
-                    title="viviendas Obsoletas">
-            </div>
-        </div>
 
-    </div>
+    <!-- carrusel de proyectos -->
+    <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="true">
+        <div class="carousel-inner">
 
-
-    <!-- Proyectos -->
-    <section id="proyectos"  class=" py-5">
-        <!-- <div class="container">
-            <h2 class="text-center mb-4">Proyectos Destacados</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <model-viewer src="Proyectos3d/MiConv.com__MiConv.com__PLANTILLA_SPT_EJERCICIO3_JULIETH_MURILLO (1)-0004 - Floor Plan - Level 1.glb" alt="Un modelo 3D" auto-rotate
-                        camera-controls></model-viewer>
-                    <h5>Edificio Residencial en Medellín</h5>
-                    <p>Colaboración en planos estructurales y detalles constructivos.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x300" class="img-fluid rounded mb-3" alt="Proyecto 2">
-                    <h5>Planta Industrial en Antioquia</h5>
-                    <p>Diseño técnico de maquinaria y distribución de espacios productivos.</p>
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center bg-dark text-white p-5"
+                    style="min-height: 500px;">
+                    <img src="Image/atrato-river.jpg" width="450vh" class="img-fluid rounded me-md-5 mb-4 mb-md-0"
+                        alt="Proyecto 1">
+                    <div class="text-start">
+                        <!-- <h2 class="mb-3">Diseño Técnico de Alta Precisión</h2> -->
+                        <p class="lead">Las estudiantes <strong style="color:#BF9264;">Julieth Murillo y Charik Mejía
+                                del Colegio Mayor de
+                                Antioquia presentan un innovador prototipo de vivienda flotante</strong> inspirado
+                            en las
+                            comunidades de
+                            Bangladesh y adaptado a las necesidades específicas del Bajo Atrato colombiano.<br>A
+                            través de
+                            este
+                            proyecto, se <strong style="color:#BF9264;">exploran soluciones constructivas sostenibles,
+                                la
+                                adaptabilidad a diversas
+                                condiciones
+                                climáticas</strong> y la integración de tecnologías que minimizan el impacto ambiental,
+                            aprovechando de
+                            manera responsable los recursos hídricos"</p>
+                    </div>
                 </div>
             </div>
-        </div> -->
-        <div class="container text-center bg-light-subtle">
-            <h2 style="color: #6F826A;" class="mb-5">Proyectos Destacados</h2>
-            <div class="d-lg-flex pb-5 ">
-                <div class="col border-end ">
-                    <model-viewer
-                        src="Proyectos3d/MiConv.com__MiConv.com__PLANTILLA_SPT_EJERCICIO3_JULIETH_MURILLO (1)-0004 - Floor Plan - Level 1.glb"
-                        alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
-                        style="width: 100%; height: 400px;"></model-viewer>
-                    <h5>Nombre de Proyecto</h5>
-                    <p>breve descripcion del proyecto.</p>
-                </div>
-                <div class="col  border-start mt-5 mt-md-0">
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center bg-secondary text-white p-5"
+                    style="min-height: 500px;">
+                    <!-- <img src="https://via.placeholder.com/600x400" class="img-fluid rounded me-md-5 mb-4 mb-md-0"
+                            alt="Proyecto 2"> -->
                     <model-viewer src="Proyectos3d/MiConv.com__MID4_JULIETHMM_RVT25_10_09_2025 - 3D View - {3D}.glb"
                         alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
-                        style="width: 100%; height: 400px;"></model-viewer>
-                    <h5>Nombre del proyecto</h5>
-                    <p>breve descripcion del proyecto.</p>
+                        style="width: 98%; height: 300px;"></model-viewer>
+                    <div class="text-start">
+                        <!-- <h2 class="mb-3">Modelado 3D para Construcción</h2> -->
+                        <p class="lead">En esta plataforma, podrás explorar el modelo 3D de la vivienda flotante,
+                            así como acceder a una variedad de recursos detallados, incluyendo: <br>
+                        <ul>
+                            <li>Planos y modelos 3D de los componentes constructivos, disponibles para descarga y
+                                revisión.</li>
+                            <li>Una completa documentación técnica, que incluye 12 detalles constructivos clave,
+                                presentados en
+                                formato 2D y 3D.</li>
+                            <li>Una tabla de Excel descargable que resume los datos técnicos y parámetros del
+                                proyecto,
+                                permitiendo una fácil integración y análisis de la información.</li>
+
+                        </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <hr>
+
+            <!-- Slide 3 -->
+            <!-- <div class="carousel-item">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center bg-success text-white p-5"
+                        style="min-height: 500px;">
+                        <img src="Image/OIP.webp" class="img-fluid rounded me-md-5 mb-4 mb-md-0"
+                            alt="Proyecto 3">
+                        <div class="text-start">
+                            <h2 class="mb-3">Colaboración Multidisciplinaria</h2>
+                            <p class="lead">Este proyecto es un ejemplo del compromiso de nuestra institución con la innovación, la
+                    sostenibilidad y el desarrollo regional. Esperamos que esta plataforma sea de utilidad para
+                    estudiantes, profesionales y comunidades interesadas en soluciones habitacionales
+                    sostenibles y adaptables</p>
+                        </div>
+                    </div>
+                </div> -->
+
         </div>
-    </section>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Creditos a la universidad -->
+    <div id="invitacion" class="containe ">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center bg-success text-white p-5"
+            style="min-height: 500px;">
+            <img src="Image/OIP.webp" class="img-fluid rounded me-md-5 mb-4 mb-md-0" alt="Proyecto 3">
+            <div class="text-start">
+                <h2 class="mb-3">Colaboración Multidisciplinaria</h2>
+                <p class="lead">Este proyecto es un ejemplo del compromiso de nuestra institución con la innovación,
+                    la
+                    sostenibilidad y el desarrollo regional. Esperamos que esta plataforma sea de utilidad para
+                    estudiantes, profesionales y comunidades interesadas en soluciones habitacionales
+                    sostenibles y adaptables</p>
+            </div>
+        </div>
+    </div>
 
     <!-- apartado para los participantes del proyecto -->
     <section id="equipo" style="background-color:#F0F1C5;" class="py-5 ">
-        <div class="container" >
-            <h2 class="text-center mb-5 fw-semibold" >Nuestro Equipo</h2>
+        <div class="container">
+            <h2 style="color: #6F826A;" class="text-center mb-5 fw-semibold">Nuestro Equipo</h2>
             <div class="row row-cols-1 row-cols-md-4 g-4">
 
                 <!-- Miembro 1 -->
                 <div class="col">
                     <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 1" style="width: 120px; height: 120px;">
+                        <img src="Image/julieth.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Miembro 1"
+                            style="width: 180px; height: 170px;">
                         <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"> <strong>Ana Torres</strong></h5>
-                            <p class="card-subtitle text-muted">Arquitecta Técnica</p>
-                            <p class="card-text">Especialista en planos estructurales y diseño urbano.</p>
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Julieth Murillo M.</strong></h5>
+                            <p class="card-subtitle text-muted pt-1">Delineante de arquitectura e ingenieria</p>
+                            <!-- <p class="card-text">Especialista en planos estructurales y diseño urbano.</p> -->
                         </div>
                     </div>
                 </div>
@@ -196,12 +248,12 @@
                 <!-- Miembro 2 -->
                 <div class="col">
                     <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 2" style="width: 120px; height: 120px;">
+                        <img src="Image/charik.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Miembro 1"
+                            style="width: 180px; height: 170px;">
                         <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"> <strong>Carlos Mejía</strong></h5>
-                            <p class="card-subtitle text-muted">Delineante Industrial</p>
-                            <p class="card-text">Modelado de piezas mecánicas y planos de fabricación.</p>
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Charik Mejía</strong></h5>
+                            <p class="card-subtitle text-muted pt-1">Delineante de arquitectura e ingenieria</p>
+                            <!-- <p class="card-text">Modelado de piezas mecánicas y planos de fabricación.</p> -->
                         </div>
                     </div>
                 </div>
@@ -209,12 +261,13 @@
                 <!-- Miembro 3 -->
                 <div class="col">
                     <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 3" style="width: 120px; height: 120px;">
+                        <img src="Image/heyverM.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Miembro 1"
+                            style="width: 180px; height: 170px;">
                         <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"> <strong>Laura Gómez</strong></h5>
-                            <p class="card-subtitle text-muted">Topógrafa</p>
-                            <p class="card-text">Levantamientos topográficos y representación geoespacial.</p>
+                            <h5 class="card-title" style="color:#BF9264;"> <strong>Heyver Andres Suarez</strong>
+                            </h5>
+                            <p class="card-subtitle text-muted pt-1">Asesor Experto</p>
+                            <!-- <p class="card-text">Levantamientos topográficos y representación geoespacial.</p> -->
                         </div>
                     </div>
                 </div>
@@ -222,102 +275,288 @@
                 <!-- Miembro 4 -->
                 <div class="col">
                     <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 4" style="width: 120px; height: 120px;">
+                        <img src="Image/llor.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Miembro 1"
+                            style="width: 180px; height: 170px;">
                         <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"><strong>Jorge Ruiz</strong></h5>
-                            <p class="card-subtitle text-muted">Diseñador CAD</p>
-                            <p class="card-text">Experto en AutoCAD y modelado técnico 2D/3D.</p>
+                            <h5 class="card-title" style="color:#BF9264;"><strong>Charon A.</strong></h5>
+                            <p class="card-subtitle text-muted pt-1">Asesora Experta</p>
+                            <!-- <p class="card-text">Experto en AutoCAD y modelado técnico 2D/3D.</p> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class=" py-5">
+        <div class="container text-center bg-light-subte">
+            <h2 class="mb-5 fw-semibold">Modelo 3D</h2>
+            <div class="d-lg-flex pb-5 ">
+                <div class="col border-end ">
+                    <model-viewer src="Proyectos3d/VIVIENDA_FLOTANTE_ 04_10_2025- Vista 3D - {3D}.obj"
+                        alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
+                        style="width: 90%; height: 400px;"></model-viewer>
+                    <h5> <strong>Nombre de Proyecto</strong></h5>
+                    <p>breve descripcion del proyecto.</p>
+                </div>
+                <!-- <div class="col  border-start mt-5 mt-md-0">
+                    <model-viewer src="Proyectos3d/MiConv.com__MID4_JULIETHMM_RVT25_10_09_2025 - 3D View - {3D}.glb"
+                        alt="Un modelo 3D" auto-rotate camera-controls animation-name="Idle" ar
+                        style="width: 90%; height: 400px;"></model-viewer>
+                    <h5>Nombre del proyecto</h5>
+                    <p>breve descripcion del proyecto.</p>
+                </div> -->
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <!-- session reservada  para media-player interior-->
+    <section style="background-color:#F0F1C5;" class="p-4">
+        <div class="container text-center ">
+            <h3 style="color: #6F826A;" class="fw-semibold mb-4">Interior del 3D</h3>
+            <div class="container">
+                <!-- en este espacio va e video que las señoritas harán para el interior del modelo 3D -->
+                <!-- <video width="400" height="400" src="#" alt="Un modelo 3D" ></video> -->
+                <img class="img-fluid" src="Image/Logo TAJ&C.png" alt="" title="cargando archivo" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- session parea los 12 detalles -->
+    <section>
+        <div class="container text-center p-5">
+            <h3 class="mb-4 fw-semibold">Detalles</h3>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- el modal lo activa la etiqueta a  -->
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle1"><img src="Image/TanqueF1.jpg"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">TanqueF1</h5>
+                    </a></div>
+                <!-- Modal -->
+                <div class="modal fade" id="detalle1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Miembro 5 -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 5" style="width: 120px; height: 120px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"><strong>María López</strong></h5>
-                            <p class="card-subtitle text-muted">Coordinadora de Proyectos</p>
-                            <p class="card-text">Gestión de cronogramas, entregables y clientes.</p>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle2"><img src="Image/TanqueF2.jpg"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">TanqueF2</h5>
+                    </a></div>
+                <!-- Modal -->
+                <div class="modal fade" id="detalle2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..2
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Miembro 6 -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 6" style="width: 120px; height: 120px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"><strong>Esteban Vargas</strong></h5>
-                            <p class="card-subtitle text-muted">Ingeniero Civil</p>
-                            <p class="card-text">Supervisión técnica y validación estructural de planos.</p>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle3"><img src="Image/Detalles_Cubierta.jpg"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Detalle de la Cubierta</h5>
+                    </a></div>
+                <!-- Modal -->
+                <div class="modal fade" id="detalle3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..3
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Miembro 7 -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 7" style="width: 120px; height: 120px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;"><strong>Paula Ríos</strong></h5>
-                            <p class="card-subtitle text-muted">Diseñadora Gráfica</p>
-                            <p class="card-text">Identidad visual, planos de presentación y branding técnico.</p>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle4"><img src="Image/Detalles_Viga.jpg"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Detalle de Viga</h5>
+                    </a></div>
+                <!-- Modal -->
+                <div class="modal fade" id="detalle4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..4
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Miembro 8 -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <img src="https://via.placeholder.com/200x200" class="card-img-top rounded-circle mx-auto mt-3"
-                            alt="Miembro 8" style="width: 120px; height: 120px;">
-                        <div class="card-body">
-                            <h5 class="card-title" style="color:#BF9264;" ><strong>Luis Herrera</strong></h5>
-                            <p class="card-subtitle text-muted">Especialista BIM</p>
-                            <p class="card-text">Modelado de información de construcción y coordinación digital.</p>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle5"><img
+                            src="Image/Detalle_Anclaje.jpg" class="text-decoration-none borde border-dange"
+                            alt="imagen de los detalles" width="240vh" height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Detalle de Anclaje</h5>
+                    </a></div>
+                     <!-- Modal -->
+                <div class="modal fade" id="detalle5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..5
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none" data-bs-toggle="modal"
+                        data-bs-target="#detalle6"><img
+                            src="Image/Detalle_Refuerzo_Columna.jpg" class="text-decoration-none borde border-dange"
+                            alt="imagen de los detalles" width="240vh" height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Detalle R.Columna</h5>
+                    </a></div>
+                    <!-- Modal -->
+                <div class="modal fade" id="detalle6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..6
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
+                <div class="borde p-2"><a href="#detallesM" class="text-decoration-none"><img src="Image/Logo TAJ&C.png"
+                            class="text-decoration-none borde border-dange" alt="imagen de los detalles" width="240vh"
+                            height="230vh">
+                        <h5 style="color:#BF9264;" class="fw-semibold">Nombre Detalle</h5>
+                    </a></div>
             </div>
         </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-5">
+    <!-- <section id="contacto" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contactanos</h2>
+            <h2 style="color: #6F826A;" class="text-center mb-4 fw-semibold">Contactanos</h2>
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form>
+                <div class="col-md-6 border p-4" style="background-color:#F0F1C5;">
+                    <form action="Controlador/con-contacto.php" method="post">
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="mail" required>
                         </div>
                         <div class="mb-3">
                             <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
                         </div>
-                        <button type="submit" style="background-color: #BF9264;" class="btn  w-100">Enviar</button>
+                        <button type="submit" style="background-color: #BF9264;"
+                            class="btn fw-semibold text-light w-100">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p class="mb-0">© 2025 - Trazos Asociados J&C. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- link js bootstrap sin conexion -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
