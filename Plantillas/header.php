@@ -22,7 +22,7 @@ if ($varsesion == null || $varsesion1 == '') {
     <meta name="description" content="Trazos Asociados J&C, delineantes">
     <title>Trazos Asociados J&C</title>
 
-    <link rel="shortcut icon" href="Image/Logo TAJ&C.png" type="image/x-icon-png-jpg">
+    <link rel="shortcut icon" href="../Image/Logo TAJ&C.png" type="image/x-icon-png-jpg">
 
     <!-- feuente poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
