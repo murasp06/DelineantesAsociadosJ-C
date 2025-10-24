@@ -30,7 +30,7 @@ require "../Plantillas/header.php";
 <section class="p-2">
 
   <h2 class="text-center fw-bold">Lista de archivos</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+  <div class="row row-cols-1 row-cols-md-2 g-4 mb-5 container-fluid">
 
     <?php
     require "../Modelo/consult.php";
