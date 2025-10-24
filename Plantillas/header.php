@@ -56,7 +56,7 @@ if ($varsesion == null || $varsesion1 == '') {
     <nav class="navbar navbar-expand-lg " style="background-color:#BF9264;">
         <div class="container-fluid">
             <!-- <a class="navbar-brand fw-bolder text-white" href="#">Trazos Asociados J&C</a> -->
-            <a class="navbar-brand fw-bolder text-white" href="/"><img src="../Image/Logo_TAJ&C.png" class="rounded-4"
+            <a class="navbar-brand fw-bolder text-white" href="/"><img src="../Image/logo_TAJ&C.png" class="rounded-4"
                     width="40" height="40" alt=""> Trazos Asociados J&C </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
