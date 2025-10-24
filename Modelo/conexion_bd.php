@@ -12,7 +12,7 @@ $pass="Kalisto0608";
 try{
     $con=new PDO("mysql:host=$servidor;dbname=$bd",$usuario,$pass);
 }catch(Exception $ex){
-    echo "error de conexion ".$ex->getMessage();
+    echo "Error de conexion: ".$ex->getMessage();
 }
 
 ?>

@@ -6,7 +6,7 @@ if (!empty($_POST["btnlogin"])) {
     $usuario = $_POST["usuario"];
     $clave = $_POST["clave"];  
 
-    $sql = $con->prepare("SELECT * FROM usuariosT WHERE mail='$usuario' AND pwd ='$clave' ");
+    $sql = $con->prepare("SELECT * FROM usuariost WHERE mail='$usuario' AND pwd ='$clave' ");
     $sql->execute();
     $registros = $sql->fetchAll(PDO::FETCH_OBJ);
     foreach ($registros as $dato)
